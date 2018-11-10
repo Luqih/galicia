@@ -7,7 +7,8 @@ import CameraIcon from './icon-camera.svg';
 const Wrapper = styled.div`
   text-align: center;
   display: grid;
-  margin-top: 150px;
+  margin-top: 200px;
+  padding-left: 28%;
   button {
     width: 640px;
     border-radius: unset;
@@ -20,6 +21,11 @@ const Wrapper = styled.div`
     }
   }
 
+  .containerX {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .btn-default {
     background: #ff6600;
 
@@ -29,7 +35,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const capture = image => console.log(image)
+const capture = image => console.log(image);
 
 class Camera extends React.Component {
   static defaultProps = {
@@ -45,6 +51,7 @@ class Camera extends React.Component {
 
     return (
       <Wrapper>
+        {/* <div className="containerX"> */}
         <Webcam
           ref={this.setRef}
           screenshotFormat="image/jpeg"
@@ -59,6 +66,7 @@ class Camera extends React.Component {
         >
           <img width="25" src={CameraIcon} alt="Camera Icon" />
         </button>
+        {/* </div> */}
       </Wrapper>
     );
   }

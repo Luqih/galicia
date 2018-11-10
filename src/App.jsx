@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { getCustomers } from './api';
+import { getCustomers, createMerchant } from './api';
 
 import ContentLoader from './components/ContentLoader';
 import Pyme from './components/Pyme';
@@ -13,6 +13,7 @@ import Fourth from './components/Fourth';
 class App extends Component {
   state = {
     component: 'camera',
+    // component: 'pyme',
     firstFormData: null,
     loading: false,
   }
@@ -38,16 +39,29 @@ class App extends Component {
   handlePymeForm = async () => {
     const form = document.querySelector('#FormIngresoDos');
     const data = new URLSearchParams(new FormData(form)).toString().split('&');
-    const formattedData = data.reduce((acc, content) => {
+    let formattedData = data.reduce((acc, content) => {
       content = content.split('=');
       return { ...acc, [decodeURIComponent(content[0])]: decodeURIComponent(content[1]) };
     }, {});
-    console.log(formattedData)
+    formattedData = [{
+      Id: 1500,
+      Name: 'SUPER',
+      Category: 'Combustibles',
+      Street_Name: 'AMADEO JACQUES',
+      Street_Number: '957',
+      City: 'GENERAL PAZ',
+      State: 'CHACO',
+      Zip: '7979',
+      Lat: '-33.899568',
+      Lng: '-11.272268',
+    }];
+    console.log(formattedData);
     // this.setState(() => ({ firstFormData: formattedData, loading: true }));
-    // const customers = await getCustomers();
+    const response = await createMerchant(formattedData);
+    console.log(response);
     // this.setState(() => ({ loading: false }));
     // const customerExists = customers.findIndex(c => c.Doc_Number === `${formattedData.doc.split('.').join('')}`) > -1;
-    this.changeComponent('second');
+    // this.changeComponent('second');
   }
 
   render () {

@@ -22,13 +22,10 @@ const handleFetchResponse = async (response) => {
   throw new TypeError("Response isn't JSON");
 };
 
-export const getCustomers = () =>
-  fetch(`${GALICIA_URL}/customers?apikey=${API_KEY}`, getConfig({ method: 'GET', headers: {} }))
-    .then(handleFetchResponse)
-    .catch(e => e);
+export const getCustomers = () => fetch(`${GALICIA_URL}/customers?apikey=${API_KEY}`, getConfig({ method: 'GET', headers: {} }))
+  .then(handleFetchResponse)
+  .catch(e => e);
 
-export const createMerchant = ({ body }) =>
-  fetch(`${GALICIA_URL}/merchants?apikey=${API_KEY}`, getConfig(({ method: 'POST', headers: {}, body })))
-    .then(handleFetchResponse)
-    .catch(e => e);
-
+export const createMerchant = ({ body }) => fetch(`${GALICIA_URL}/merchants?apikey=${API_KEY}`, getConfig(({ method: 'POST', headers: {}, body })))
+  .then(handleFetchResponse)
+  .catch(e => e);
