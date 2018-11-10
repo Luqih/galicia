@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
     <!--
@@ -10,6 +10,40 @@
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link href="https://sacatutarjeta.bancogalicia.com.ar/Content/bootstrap.min.css?v=636766817251980000" rel="stylesheet" type="text/css" />
+    <link href="http://tars.agency/gueno/galicia/Content/default.min.css?v=636766817252020000" rel="stylesheet" type="text/css" />
+    <link href="https://sacatutarjeta.bancogalicia.com.ar/Content/font-awesome.min.css?v=636766817252060000" rel="stylesheet" type="text/css" />
+    <script src="https://sacatutarjeta.bancogalicia.com.ar/bundles/jquery?v=EEZBCVzQe1TpkEUeLfjEm53wpuqSSXGjiXFWAVaewp81"></script>
+    <script src="https://sacatutarjeta.bancogalicia.com.ar/bundles/external?v=2ZF0YLWWNHpgCfE1bWm7fV6sMqLE7u7sDyxfFb98nKw1" defer></script>
+    <script src="https://sacatutarjeta.bancogalicia.com.ar/bundles/core?v=69haLM2_Ps3WabuV-2a8mQ-2DWifyMXUD9Cn4Lg0T541" defer></script>
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.png">
+    <link rel="canonical" href="https://sacatutarjeta.bancogalicia.com.ar/landing" />
+    <script src="https://sacatutarjeta.bancogalicia.com.ar/bundles/formularioinicial?v=SzE11zfQztPoHtUoWz7X98R34-4Uw1Xxrmpd-PHnlP01" defer></script>
+    <script src="https://sacatutarjeta.bancogalicia.com.ar/bundles/security?v=iBTWLfSIea9wLcA8AxKAZGAgTYbd9dPSTzP85bnum0s1" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=recaptchaCall&amp;render=explicit" defer></script>
+    <script src="https://sacatutarjeta.bancogalicia.com.ar/bundles/tokensms?v=6lnw3EdgBBYWZBakwnGeQj99Cy1_ThmlePtY8ty8NBc1" defer></script>
+    <link rel="stylesheet" href="http://fonts.typonine.com/WF-003562-001360.css" type="text/css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/slick-tars.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/odometer-theme-minimal.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/reset.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/outdatedbrowser.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/typography.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/body.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/home-anim.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/mobile.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/signature/css/signature-pad.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/comparar/css/bundle.b78fc09eb190ac61bda0ee52.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/pages.css">
+    <script src="%PUBLIC_URL%/assets/js/css-browser-selector-1.0.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/modernizr.min.js"></script>
+    <style>
+        .async-hide {
+            opacity: 0 !important
+        }
+        .logoCasamiento {
+            cursor: pointer;
+        }
+    </style>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -19,7 +53,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Tu financiamiento</title>
   </head>
   <body>
     <noscript>
@@ -36,5 +70,52 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      $("#Acceso").val('1');
+      var recaptchaHabilitado = true;
+  </script>
+  
+      <script>
+        var recaptchaPublicKey = '6LcrGC0UAAAAACCWCKgJC3npK6bbfRy9HapzCJ4R';
+      </script>
+  
+  
+      <script>
+          $(document).ready(function () {
+              
+            coreLoad();
+            viewLoadPartOne();
+            viewLoadPartTwo();
+        
+          });
+      </script>
+  
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="%PUBLIC_URL%/assets/js/jquery-2.1.4.min.html"><\/script>')</script>
+    <script src="%PUBLIC_URL%/assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/tocca.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/easing.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/velocity.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/imagesloaded.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/fastclick.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/ranimation-frame.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/svg4everybody.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/verge.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/outdatedbrowser.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/velocity.ui.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/slick.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/odometer.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/ScrollMagic.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/animation.gsap.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/animation.velocity.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/jquery.formatter.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/jquery.creditCardValidator.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    <script src="%PUBLIC_URL%/assets/signature/js/signature_pad.js"></script>
+    <script src="%PUBLIC_URL%/assets/signature/js/app.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/burocratik-default.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/burocratik-slides.js"></script>
+    <script src="%PUBLIC_URL%/assets/js/quiver.js"></script>
+    <script src="https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js"></script>
   </body>
 </html>

@@ -1,0 +1,111 @@
+/*-----------------------------------------------------------------------
+TYPOGRAPHY
+
+* @Version:    1.0 - 2015
+* @author:     Burocratik (alexandre gomes - @alexrgomes)
+* @email:      alex@burocratik.com, hello@burocratik.com
+* @website:    http://www.burocratik.com
+
+-----------------------------------------------------------------------*/
+/**
+ * @license
+ * MyFonts Webfont Build ID 3075054, 2015-08-13T09:11:02-0400
+*/
+@import url("http://hello.myfonts.net/count/2eebee");
+
+
+@font-face {
+  font-family: 'AvenirLTStd-Heavy';
+  src: url('../fonts/2EEBEE_0_0.eot');src: url('../fonts/2EEBEE_0_0d41dd41d.eot?#iefix') format('embedded-opentype'),url('../fonts/2EEBEE_0_0.woff2') format('woff2'),url('../fonts/2EEBEE_0_0.woff') format('woff'),url('../fonts/2EEBEE_0_0.ttf') format('truetype');
+  font-weight:normal; font-style:normal;
+}
+
+
+@font-face {
+  font-family: 'AvenirLTStd-Medium';
+  src: url('../fonts/2EEBEE_1_0.html');src: url('../fonts/2EEBEE_1_0d41dd41d.html?#iefix') format('embedded-opentype'),url('../fonts/2EEBEE_1_0-2.html') format('woff2'),url('../fonts/2EEBEE_1_0.woff') format('woff'),url('../fonts/2EEBEE_1_0.ttf') format('truetype');
+  font-weight:normal; font-style:normal;
+}
+
+
+@font-face {
+  font-family: 'AvenirLTStd-Light';
+  src: url('../fonts/2EEBEE_2_0.eot');src: url('../fonts/2EEBEE_2_0d41dd41d.eot?#iefix') format('embedded-opentype'),url('../fonts/2EEBEE_2_0.woff2') format('woff2'),url('../fonts/2EEBEE_2_0.woff') format('woff'),url('../fonts/2EEBEE_2_0.ttf') format('truetype');
+  font-weight:normal; font-style:normal;
+}
+
+
+@font-face {
+  font-family: 'AvenirLTStd-Book';
+  src: url('../fonts/2EEBEE_3_0.eot');src: url('../fonts/2EEBEE_3_0d41dd41d.eot?#iefix') format('embedded-opentype'),url('../fonts/2EEBEE_3_0.woff2') format('woff2'),url('../fonts/2EEBEE_3_0.woff') format('woff'),url('../fonts/2EEBEE_3_0.ttf') format('truetype');
+  font-weight:normal; font-style:normal;
+}
+
+
+@font-face {
+  font-family: 'AvenirLTStd-Black';
+  src: url('../fonts/2EEBEE_4_0.eot');src: url('../fonts/2EEBEE_4_0d41dd41d.eot?#iefix') format('embedded-opentype'),url('../fonts/2EEBEE_4_0.woff2') format('woff2'),url('../fonts/2EEBEE_4_0.woff') format('woff'),url('../fonts/2EEBEE_4_0.ttf') format('truetype');
+  font-weight:normal; font-style:normal;
+}
+
+
+/** =RENDERING **/
+html, body{
+    text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; font-smoothing: antialiased;
+    -moz-font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+    -moz-font-feature-settings:"smcp=1, onum=1, frac=1, kern=1, liga=1, dlig=1, swsh=1";
+    -ms-font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+    -o-font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+    -webkit-font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+    font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+}
+
+/* Chrome doesn't assume text rendering for form elements */
+input,
+textarea,
+select,
+button {
+  text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; font-smoothing: antialiased;
+  -moz-font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+  -moz-font-feature-settings:"smcp=1, onum=1, frac=1, kern=1, liga=1, dlig=1, swsh=1";
+  -ms-font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+  -o-font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+  -webkit-font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+  font-feature-settings:"smcp" 1, "onum" 1, "frac" 1, "kern" 1, "liga" 1, "dlig" 1, "swsh" 1;
+}
+.text-subs,
+.sub, sub {
+  -moz-font-feature-settings:"subs" 1; -moz-font-feature-settings:"subs=1";
+  -ms-font-feature-settings:"subs" 1; -o-font-feature-settings:"subs" 1;
+  -webkit-font-feature-settings:"subs" 1; font-feature-settings:"subs" 1;
+}
+.text-sups,
+.sup, sup {
+  -moz-font-feature-settings:"sups" 1; -moz-font-feature-settings:"sups=1";
+  -ms-font-feature-settings:"sups" 1; -o-font-feature-settings:"sups" 1;
+  -webkit-font-feature-settings:"sups" 1; font-feature-settings:"sups" 1;
+}
+.sub, sub,
+.sup, sup {
+  position: relative;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+.sup, sup { top: -0.5em; }
+.sub, sub { bottom: -0.25em;}
+
+/*******  *******/
+p { padding-bottom: 10px;}
+p:last-child { padding-bottom: 0; }
+
+/** =WEIGHT STYLE **/
+strong,
+.strong {
+  font-family: "AvenirLTStd-Black", Helvetica, Arial, sans-serif;
+}
+
+/** =ALIGNMENT **/
+.txt-center { text-align: center;}
+.txt-left { text-align: left;}
+.txt-right { text-align: right;}
